@@ -25,6 +25,7 @@ body {
 header{
     background-color: #3161e0;
     height: 80px;
+    
 }
 
 .container{
@@ -37,20 +38,35 @@ header{
 .col-logo,
 .col-login{
     width: 23%;
-
-    /* TEST */
-    background-color: wheat;
-    height: 80px;
 }
 
 .col-menu{
     width: 54%;
-
-    /* TEST */
-    background-color: whitesmoke;
-    height: 80px;
 }
 
 .logo{
+    display: inline-block;
     vertical-align: middle;
 }
+
+.menu{
+    list-style-type: none;
+}
+
+.menu li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu a{
+    display: inline-block;
+    line-height: 80px;
+    text-decoration: none;
+    padding: 0 20px;
+    color: white;
+}
+
+.col-login{
+    text-align: right;
+}
+
