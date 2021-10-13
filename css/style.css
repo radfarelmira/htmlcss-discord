@@ -9,3 +9,48 @@
 body {
     font-family: "Whitney",sans-serif;
 }
+ /* Layout generic classes */
+
+ .col{
+     float: left;
+ }
+
+ .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* HEADER */
+header{
+    background-color: #3161e0;
+    height: 80px;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+/* NAv */
+
+.col-logo,
+.col-login{
+    width: 23%;
+
+    /* TEST */
+    background-color: wheat;
+    height: 80px;
+}
+
+.col-menu{
+    width: 54%;
+
+    /* TEST */
+    background-color: whitesmoke;
+    height: 80px;
+}
+
+.logo{
+    vertical-align: middle;
+}
