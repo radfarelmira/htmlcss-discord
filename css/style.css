@@ -41,7 +41,17 @@ header{
 }
 
 .col-menu{
-    width: 54%;
+    width: 54%;  
+}
+
+.col-logo,
+.col-menu,
+.col-login{
+    line-height: 80px;
+}
+
+.col-login{
+    text-align: right;
 }
 
 .logo{
@@ -60,13 +70,78 @@ header{
 
 .menu a{
     display: inline-block;
-    line-height: 80px;
     text-decoration: none;
     padding: 0 20px;
     color: white;
 }
 
-.col-login{
-    text-align: right;
+
+/* Buttons */
+.btn{
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
 }
 
+.btn-white{
+    background-color: white;
+    color: black;
+}
+
+.btn-black{
+    background-color: black;
+    color: white;
+}
+
+.btn-small{
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+.btn-big{
+    padding: 15px 20px;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+/* MAIN */
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(../img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron-content{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 90px 0;
+}
+
+/* Title and Text */
+.title{
+    font-size: 50px;
+    line-height: 100px;
+}
+
+.text{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.jumbotron-btns{
+    padding-top: 40px;
+}
+
+.jumbotron-btns a{
+    margin-left: 20px ;
+}
+
+.arrow{
+    font-size: 22px;
+    font-weight: 900;
+    vertical-align: baseline;
+}
