@@ -9,7 +9,21 @@
 body {
     font-family: "Whitney",sans-serif;
 }
+
  /* Layout generic classes */
+
+/* Container */
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.container-small {
+    width: 60%;
+    margin: auto;
+}
+
+
 
  .col{
      float: left;
@@ -21,6 +35,75 @@ body {
     clear: both;
 }
 
+img{
+    width: 100%;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    line-height: normal;
+    border-radius: 40px;
+}
+
+.btn-small {
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+.btn-large {
+    font-size: 20px;
+    padding: 16px 32px;
+}
+
+.btn-white {
+    color: black;
+    background-color: white;
+}
+
+.btn-dark {
+    background-color: #23272a;
+    color: white;
+}
+
+.btn-violet {
+    background-color: #8ea1e1;
+    color: white;
+}
+
+/* Title and text */
+.title {
+    font-size: 50px;
+    line-height: 65px;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.bg-gray{
+    background-color: #f6f6f6;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+}
+
+/* Waves up and down */
+.wave {
+    color: #f6f6f6;
+}
+.wave svg {
+    display: block;
+}
+.wave.down {
+    transform: rotate(180deg);
+}
+
+
 /* HEADER */
 header{
     background-color: #3161e0;
@@ -28,39 +111,33 @@ header{
     
 }
 
-.container{
-    width: 70%;
-    margin: auto;
-}
 
 /* NAv */
-
+nav{
+    line-height: 80px;
+}
 .col-logo,
 .col-login{
-    width: 23%;
+    width: 10%;
 }
 
 .col-menu{
-    width: 54%;  
+    width: 80%;  
 }
 
-.col-logo,
-.col-menu,
-.col-login{
-    line-height: 80px;
-}
 
 .col-login{
     text-align: right;
 }
 
-.logo{
+.col-logo img{
     display: inline-block;
     vertical-align: middle;
 }
 
 .menu{
     list-style-type: none;
+    text-align: center;
 }
 
 .menu li{
@@ -71,38 +148,11 @@ header{
 .menu a{
     display: inline-block;
     text-decoration: none;
-    padding: 0 20px;
+    margin:0 15px;
     color: white;
 }
 
 
-/* Buttons */
-.btn{
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.btn-white{
-    background-color: white;
-    color: black;
-}
-
-.btn-black{
-    background-color: black;
-    color: white;
-}
-
-.btn-small{
-    padding: 10px 10px;
-    border-radius: 20px;
-}
-
-.btn-big{
-    padding: 15px 20px;
-    border-radius: 40px;
-    font-size: 18px;
-}
 
 /* MAIN */
 
@@ -111,6 +161,7 @@ header{
     background-image: url(../img/jumbo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 180px 0;
 }
 
 .jumbotron-content{
@@ -118,30 +169,159 @@ header{
     margin: auto;
     text-align: center;
     color: white;
-    padding: 90px 0;
 }
 
-/* Title and Text */
-.title{
-    font-size: 50px;
-    line-height: 100px;
+.jumbotron-content h1 {
+    margin-bottom: 30px;
 }
 
-.text{
-    font-size: 20px;
-    line-height: 30px;
+.jumbotron-content .buttons {
+        margin-top: 30px;
 }
 
-.jumbotron-btns{
-    padding-top: 40px;
-}
-
-.jumbotron-btns a{
-    margin-left: 20px ;
+.jumbotron-content .btn {
+        margin-right: 30px;
 }
 
 .arrow{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 900;
     vertical-align: baseline;
+}
+
+/* SECTIONS */
+
+/* Section generic classes */
+main section {
+    padding: 90px 0;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Section first */
+.advantages .col-img {
+    width: 70%;
+    padding-right: 40px;
+}
+
+.advantages .col-text {
+    width: 30%;
+    padding: 0 30px;
+}
+
+.advantages .title {
+    margin-top: 35px;
+}
+
+/* Section second */
+.advantages.sec-second .col-img {
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+/* Section fourth */
+.sec-fourth {
+    text-align: center;
+}
+
+.sec-fourth-heading {
+    padding: 0 50px;
+}
+
+.sec-fourth h3 {
+    font-size: 27px;
+    background-image: url("../img/stars.svg");
+    background-repeat: no-repeat;
+    background-position: contain;
+    width: 60%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 110px 0;
+    background-color: #23272a;
+    color: white;
+}
+
+.footer-menus {
+    border-bottom: 1px solid #7289da;
+    padding-bottom: 20px;
+}
+
+.socials {
+    width: 30%;
+}
+
+.footer-single-menu {
+    width: 17.5%;
+}
+
+/* Socials */
+footer h4 {
+    font-size: 30px;
+    color: #7289da;
+}
+
+.languages {
+    margin: 25px 0;
+}
+
+.languages > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flag {
+    width: 30px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+}
+
+/* Single menu */
+.footer-single-menu h5 {
+    font-size: 18px;
+    color: #7289da;
+    margin-bottom: 10px;
+}
+
+.footer-single-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-single-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Footer bottom */
+.logo-img {
+    width: 100px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-logo,
+.register {
+    width: 50%;
+}
+
+.register {
+    text-align: right;
 }
