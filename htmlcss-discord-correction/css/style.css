@@ -1,0 +1,272 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+body {
+    font-family: "Whitney",sans-serif;
+}
+
+/* Layout generic classes */
+.col {
+    float: left;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Container */
+.container {
+    width: 70%;
+    margin: auto;
+}
+.container-narrow {
+    width: 60%;
+    margin: auto;
+}
+
+/* Images */
+img {
+    width: 100%;
+}
+
+/* Texts and title */
+.title {
+    font-size: 50px;
+    line-height: 65px;
+}
+.text {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    line-height: normal;
+    border-radius: 40px;
+}
+.btn-small {
+    padding: 10px 14px;
+    font-size: 14px;
+}
+.btn-large {
+    font-size: 20px;
+    padding: 16px 32px;
+}
+.btn-white {
+    color: black;
+    background-color: white;
+}
+.btn-dark {
+    background-color: #23272a;
+    color: white;
+}
+.btn-violet {
+    background-color: #8ea1e1;
+    color: white;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+}
+
+.logo-img {
+    width: 105px;
+}
+
+/* HEADER */
+header {
+    background-color: #3161e0;
+    color: white;
+    height: 80px;
+}
+nav {
+    line-height: 80px;
+}
+.logo,
+.login {
+    width: 10%;
+}
+
+/* Logo */
+.logo img {
+    vertical-align: middle;
+}
+
+/* Central menu */
+.central-menu {
+    width: 80%;
+    text-align: center;
+}
+.top-menu {
+    list-style-type: none;
+}
+.top-menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.top-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Login */
+.login {
+    text-align: right;
+}
+
+.back-gray {
+    background-color: #f6f6f6;
+}
+
+/* MAIN */
+main section {
+    padding: 90px 0;
+}
+main h2 {
+    margin-bottom: 20px;
+}
+.wave {
+    color: #f6f6f6;
+}
+.wave svg {
+    display: block;
+}
+.wave.down {
+    transform: rotate(180deg);
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 180px 0;
+}
+.jumbotron-content {
+    width: 50%;
+    margin: auto;
+    color: white;
+}
+.jumbotron-content h1 {
+    margin-bottom: 30px;
+}
+.jumbotron-content .buttons {
+    margin-top: 30px;
+}
+.jumbotron-content .btn {
+    margin-right: 30px;
+}
+
+/* Advantages */
+.advantages .col-image {
+    width: 70%;
+    padding-right: 40px;
+}
+.advantages.text-first .col-image {
+    padding-right: 0;
+    padding-left: 40px;
+}
+.advantages .col-text {
+    width: 30%;
+    padding: 0 30px;
+}
+.advantages .title {
+    margin-top: 35px;
+}
+
+/* Tech section */
+.tech {
+    text-align: center;
+}
+.tech-heading {
+    padding: 0 50px;
+}
+.tech h3 {
+    font-size: 27px;
+    background-image: url("../img/stars.svg");
+    background-repeat: no-repeat;
+    background-position: contain;
+    width: 60%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* FOOTER */
+footer {
+    padding: 110px 0;
+    background-color: #23272a;
+    color: white;
+}
+.footer-menus {
+    border-bottom: 1px solid #7289da;
+
+    /* test */
+    background-color: #8ea1e1;
+}
+.socials {
+    width: 30%;
+}
+.footer-single-menu {
+    width: 17.5%;
+}
+
+/* Socials */
+footer h4 {
+    font-size: 30px;
+    color: #7289da;
+}
+.languages {
+    margin: 25px 0;
+}
+.languages > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.flag {
+    width: 30px;
+}
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* Single menu */
+.footer-single-menu h5 {
+    font-size: 18px;
+    color: #7289da;
+}
+.footer-single-menu li {
+    margin-bottom: 10px;
+}
+.footer-single-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    margin-top: 20px;
+}
+.footer-logo,
+.register {
+    width: 50%;
+}
+.register {
+    text-align: right;
+}
